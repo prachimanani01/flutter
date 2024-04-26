@@ -8,18 +8,16 @@ void main() {
     [7, 1, 6]
   ];
 
- do {
-
-  print("$arr\n");
-  print("1. Sum of all elements");
-  print("2. Sum of a specific row");
-  print("3. Sum of a specific column");
-  print("4. Sum of diagonal elements");
-  print("5. Sum of anti-diagonal elements");
-  print("0. Exit");
+  do {
+    print("$arr\n");
+    print("1. Sum of all elements");
+    print("2. Sum of a specific row");
+    print("3. Sum of a specific column");
+    print("4. Sum of diagonal elements");
+    print("5. Sum of anti-diagonal elements");
+    print("0. Exit");
     stdout.write("Enter your choice: ");
-     choice = stdin.readLineSync()!;
-    
+    choice = stdin.readLineSync()!;
 
     switch (choice) {
       case "1":
@@ -75,6 +73,5 @@ void main() {
         print("Invalid choice\n");
         break;
     }
-  }
-while(choice != 0 );
+  } while (choice != 0);
 }
