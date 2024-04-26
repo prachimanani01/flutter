@@ -1,13 +1,19 @@
-void main() 
-{
-  List<int> largest = [1, 2, -3, 4, 6, -7, 8, -9];
-  print("Original List : ${largest}");
-  int large = largest[0];
-  for (int i in largest) {
-    if (large < i) {
-      large = i;
-    }
+import 'dart:io';
+
+void main() {
+  List array = [];
+  stdout.write("Enter the elements you want : ");
+  int len = int.parse(stdin.readLineSync()!);
+  for (int i = 1; i <= len; i++) {
+    stdout.write("Enter Element : ");
+    int elem = int.parse(stdin.readLineSync()!);
+    array.add(elem);
   }
-  print("Negative Elements in Array : ");
-  print("${large}");
+  int large = array[0];
+  array.forEach((element) {
+    if (element > large) {
+      large = element;
+    }
+  });
+  print("Largest Element is : $large");
 }
