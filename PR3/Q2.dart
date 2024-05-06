@@ -86,7 +86,7 @@ void main() {
   stdout.write("Enter ID : ");
     int id = int.parse(stdin.readLineSync()!);
     stdout.write("Enter Name : ");
-    String name = stdin.readLineSync()!;             Itna to kon busy hota he      Iss se achaa to ashish ya nishant ya or koi hota na to wo jldi reply deta
+    String name = stdin.readLineSync()!;             
     stdout.write("Enter Contact number : ");
     int contact = int.parse(stdin.readLineSync()!);
 
